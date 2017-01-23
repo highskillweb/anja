@@ -58,7 +58,7 @@ if ( $mail->send())
 	$email = trim($_POST['email']);
 	$message = trim($_POST['message']);
 	
-	$emailTo = 'info@trackatoo.net'; //Put your own email address here
+	$emailTo = 'knnsbarl@yandex.com'; //Put your own email address here
 	if (empty($subject)) {
 	    $subject = 'Message from your website.';
 	}
