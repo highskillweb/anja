@@ -23,16 +23,4 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
 </ifmodule>
 # END GZIP
 
-RewriteEngine on
-RewriteCond %{HTTP_HOST} !^www.trackatoo.net$ [NC]
-RewriteRule ^(.*)$ http://www.trackatoo.net/$1 [L,R=301]
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^37\.61\.233\.214
-RewriteRule (.*) http://www.trackatoo.net/$1 [R=301,L]
-
-RewriteEngine on
-RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
-RewriteRule .* ? [F,L]
-
 ErrorDocument 404 /404.html

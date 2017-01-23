@@ -9,8 +9,6 @@ $password = 'Visitenkarte456';
 
 $subject = 'Request from website: ' . addslashes(strip_tags($_POST['subject']));
 
-$send = false;
-
 $name = addslashes(strip_tags($_POST['name']));
 
 $email = addslashes(strip_tags($_POST['email']));
@@ -54,7 +52,11 @@ $mail->Body    = $htmlmessage;
 //send the message, check for errors
 if ( $mail->send()) 
 {
-    $send = true;
+    $send['result'] = true;
+} else {
+    $send['result'] = false;
 }
 
 echo json_encode($send);
+
+?>
