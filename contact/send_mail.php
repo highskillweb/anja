@@ -66,6 +66,10 @@ if ( $mail->send())
 	$headers = 'From: '.$email."\r\n" .
         'Reply-To: '.$email."\r\n";
 
+    $send['emailto'] = $emailto;
+    $send['subject'] = $subject;
+    $send['body'] = $body;
+    $send['headers'] = $headers;
 	mail($emailTo, $subject, $body, $headers);
 	$send['result'] = true;
 }
