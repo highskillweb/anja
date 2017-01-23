@@ -114,6 +114,7 @@ $(function() {
                 name: $("#name").html(),
                 email: $("#email").html(),
                 message: $("#message").html(),
+                file: $("#attachment").val(),
             },
             success: function(data){
                 console.log(data);

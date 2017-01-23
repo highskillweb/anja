@@ -1450,11 +1450,21 @@
                             </div>
                             <!-- //.form-group -->
 
-                            <div class="form-group form-group-bottom">
+                            <div class="form-group form-group-lg">
                                 <label for="subject">Subject*</label>
 
                                 <div class="input-group input-group-lg">
                                     <input type="text" name="subject" id="subject" class="form-control required" placeholder="What is it about?">
+                                </div>
+                                <!-- //.input-group -->
+                            </div>
+                            <!-- //.form-group -->
+
+                            <div class="form-group form-group-bottom">
+                                <label for="subject">Attachment</label>
+
+                                <div class="input-group input-group-lg">
+                                    <input type="file" name="attachment" id="attachment" class="form-control" placeholder="Attach a file">
                                 </div>
                                 <!-- //.input-group -->
                             </div>

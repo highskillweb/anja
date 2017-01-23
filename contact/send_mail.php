@@ -15,6 +15,8 @@ $email = addslashes(strip_tags($_POST['email']));
 
 $message = addslashes(strip_tags($_POST['message']));
 
+$file_path = $_POST['file'];
+
 $htmlmessage = <<<MESSAGE
     <html>
     	<head>
@@ -49,6 +51,8 @@ $mail->Subject = $subject;
 
 $mail->Body    = $htmlmessage;
 
+$mail->AddAttachment( $file_path , 'Attach_file' );
+
 //send the message, check for errors
 if ( $mail->send()) 
 {
@@ -58,7 +62,7 @@ if ( $mail->send())
 	$email = trim($_POST['email']);
 	$message = trim($_POST['message']);
 	
-	$emailTo = 'knnsbarl@yandex.com'; //Put your own email address here
+	$emailTo = 'info@trackatoo.net'; //Put your own email address here
 	if (empty($subject)) {
 	    $subject = 'Message from your website.';
 	}
