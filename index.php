@@ -7,39 +7,7 @@
     <meta charset="utf-8">
 	<html lang="en">
     <title>Trackatoo - Professional Handmade Translations</title>
-    <meta name="description" content="We are a team of native speakers that offer professional online translation services for the languages German, English, Spanish and Italian.">    
-	<meta name="keywords" content="Translation services, German, English, Spanish, Italian, website translation, e-commerce translation, legal translation, document translation">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="robots" content="noodp"/>
-		<meta name="robots" content="index, follow"/> 
-		<meta name="author" content="Anja Pusch">
-		<link rel="author" href=""/>
-		<meta name="publisher" content="as-digital.net"/>
-		<link rel="publisher" href=""/> 
-			
-		<meta name="DC.title" content="We offer professional online translation services for the languages German, English, Spanish and Italian and are specialized on website content, e-commerce and documents." />
-		<meta name="geo.region" content="#" /> 
-		<meta name="geo.placename" content="Port Stanley" />
-		<meta name="geo.position" content="42.661904, -81.215651" />
-		<meta name="ICBM" content="42.661904, -81.215651" />
-			
-		<meta property="og:title" content="Trackatoo - Professional Translations"/>
-		<meta property="og:site_name" content="Trackatoo"/> 
-		<meta property="og:url" content="http://www.trackatoo.net/"/> 
-		<meta property="og:description" content="We offer professional online translation services for the languages German, English, Spanish and Italian and are specialized on website content, e-commerce and documents."/> 
-		<meta property="og:type" content="Website"/> 
-			
-		<!-- additional schema data-->
-
-		<link itemprop="hasMap"  href="">
-		<script type="application/ld+json">{"@context": "http://schema.org","@type": "LocalBusiness","url": "http://www.trackatool.net","logo": "http://www.trackatoo.com/img/trackatoo-logo.jpg"}</script>
-		<script type="application/ld+json">{"@context" : "http://schema.org","@type" : "LocalBusiness","url" : "http://www.trackatool.net","contactPoint" : [{"@type" : "ContactPoint","telephone" : "+1-674-866-35938",
-		"contactType" : "customer service","areaServed" : "DE"],"availableLanguage" : ["German"]}]}</script>
-		<script type="application/ld+json">{"@context" : "http://schema.org","@type" : "LocalBusiness","name" : "Trackatoo","url" : "http://www.trackatoo.net","sameAs" : [
-		"https://www.facebook.com/trackatoo/", "https://twitter.com/trackatoo", "#xing"
-		"https://www.linkedin.com/company/15257949?trk=tyah&trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_15257949%2Cidx%3A0"]}</script>
-		<!-- end additional schema data-->
-
+    
 	<!-- favicon -->
 
 		<link rel="icon" href="favicon.png" type="image/png">
@@ -65,11 +33,6 @@
 	<!-- end favicon-->
 	
 	
-	<!-- languages -->
-	<link rel="alternate" hreflang="en" href="http://www.trackatoo.net/index.html">
-	<link rel="alternate" hreflang="de" href="http://www.trackatoo.net/deutsch.html">
-	<link rel="alternate" hreflang="es" href="http://www.trackatoo.net/espanol.html">
-
     <!-- Google Font -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
