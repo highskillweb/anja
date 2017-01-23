@@ -107,11 +107,17 @@ $(function() {
         
         $.ajax({
             url: $('#contact-us-form').attr('action'),
-            type: 'post',
+            type: 'POST',
             dataType: 'json',
-            data: $(this).serialize(),
+            data:{
+                subject: $("#subject").html(),
+                name: $("#name").html(),
+                email: $("#email").html(),
+                message: $("#message").html(),
+            },
             success: function(data){
-                if (data == true){
+                console.log(data);
+                if (data['result'] == true){
                     $('.form-respond').html("<div class='content-message'><i class='fa fa-rocket fa-4x'></i> <h2>Email Sent Successfully</h2> <p>Your message has been submitted.</p></div>");
                 } else {
                     $('.form-respond').html("<div class='content-message'><i class='fa fa-exclamation-circle fa-4x'></i> <h2>Error sending</h2> <p>Try again later.</p></div>");
@@ -122,6 +128,8 @@ $(function() {
                 },3000);
             },
             error: function(xhr, err){
+                console.log(xhr);
+                console.log(err);
                 $('.form-respond').html("<div class='content-message'><i class='fa fa-exclamation-circle fa-4x'></i> <h2>Error sending</h2> <p>Try again later.</p></div>");
                 
                 setTimeout(function(){
