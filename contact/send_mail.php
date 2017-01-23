@@ -53,8 +53,21 @@ $mail->Body    = $htmlmessage;
 if ( $mail->send()) 
 {
     $send['result'] = true;
-} else {
-	$send['result'] = false;
+} else {	
+	$name = trim($_POST['name']);
+	$email = trim($_POST['email']);
+	$message = trim($_POST['message']);
+	
+	$emailTo = 'info@trackatoo.net'; //Put your own email address here
+	if (empty($subject)) {
+	    $subject = 'Message from your website.';
+	}
+	$body = "Name: $name \n\nEmail: $email \n\nMessage:\n$message";
+	$headers = 'From: '.$email."\r\n" .
+        'Reply-To: '.$email."\r\n";
+
+	mail($emailTo, $subject, $body, $headers);
+	$send['result'] = true;
 }
 
 echo json_encode($send);
